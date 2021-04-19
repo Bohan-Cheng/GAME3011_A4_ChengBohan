@@ -14,7 +14,7 @@ public class S_UILine : MonoBehaviour
     void Start()
     {
         rect = GetComponent<RectTransform>();
-        StartPoint = rect.position;
+        SetLine(rect.position, Input.mousePosition);
     }
 
     // Update is called once per frame
